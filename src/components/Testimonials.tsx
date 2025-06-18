@@ -1,4 +1,6 @@
 
+import { Star } from "lucide-react";
+
 const Testimonials = () => {
   const testimonials = [
     {
