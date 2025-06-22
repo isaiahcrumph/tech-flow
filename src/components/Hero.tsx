@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +23,7 @@ const Hero = () => {
               Engineered for professionals who demand excellence.
             </p>
             
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 text-lg"
