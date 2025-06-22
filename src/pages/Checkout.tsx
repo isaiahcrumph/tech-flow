@@ -78,9 +78,9 @@ const Checkout = () => {
     
     setIsSubmitting(false);
     
-    // Redirect to home page after successful order
+    // Redirect to order completion page
     setTimeout(() => {
-      navigate('/');
+      navigate('/order-complete');
     }, 2000);
   };
 
