@@ -1,8 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 lg:py-32">
       <div className="container mx-auto px-4">
@@ -21,7 +24,11 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 text-lg">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 text-lg"
+                onClick={() => navigate('/checkout')}
+              >
                 Order Now - $299
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

@@ -1,8 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="pricing" className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
       <div className="container mx-auto px-4">
@@ -52,7 +54,11 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <Button size="lg" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 text-lg">
+              <Button 
+                size="lg" 
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 text-lg"
+                onClick={() => navigate('/checkout')}
+              >
                 <ShoppingCart className="w-5 h-5 mr-2" />
                 Order Now - Save $100
               </Button>

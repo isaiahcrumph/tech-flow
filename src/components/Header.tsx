@@ -1,8 +1,11 @@
 
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
       <div className="container mx-auto px-4 py-4">
@@ -23,7 +26,10 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+          <Button 
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+            onClick={() => navigate('/checkout')}
+          >
             <ShoppingCart className="w-4 h-4 mr-2" />
             Buy Now
           </Button>
