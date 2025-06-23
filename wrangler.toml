@@ -1,0 +1,10 @@
+# The name of your Worker.
+name = "tech-flow"
+
+# The date of the Workers runtime version to use.
+compatibility_date = "2024-06-24"
+
+# This section tells Wrangler to treat this as a static site.
+assets = { directory = "./dist" }
+# The directory where your built static assets are located.
+# Your build log shows they are in "dist".
