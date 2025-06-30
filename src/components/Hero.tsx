@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               The Future of
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent pb-3">
                 Smart Technology
               </span>
             </h1>
