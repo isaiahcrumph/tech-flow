@@ -1,7 +1,14 @@
 
 import { Facebook, Instagram, Twitter, Mail, Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleSocialClick = () => {
+    navigate('/social-demo');
+  };
+
   return (
     <footer className="bg-slate-900 text-white py-16">
       <div className="container mx-auto px-4">
@@ -15,9 +22,18 @@ const Footer = () => {
               that enhance your daily life and work productivity.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="w-6 h-6 text-slate-400 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Instagram className="w-6 h-6 text-slate-400 hover:text-purple-400 cursor-pointer transition-colors" />
-              <Twitter className="w-6 h-6 text-slate-400 hover:text-blue-400 cursor-pointer transition-colors" />
+              <Facebook 
+                onClick={handleSocialClick}
+                className="w-6 h-6 text-slate-400 hover:text-blue-400 cursor-pointer transition-colors" 
+              />
+              <Instagram 
+                onClick={handleSocialClick}
+                className="w-6 h-6 text-slate-400 hover:text-purple-400 cursor-pointer transition-colors" 
+              />
+              <Twitter 
+                onClick={handleSocialClick}
+                className="w-6 h-6 text-slate-400 hover:text-blue-400 cursor-pointer transition-colors" 
+              />
             </div>
           </div>
           
