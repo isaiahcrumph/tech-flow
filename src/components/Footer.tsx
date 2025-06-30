@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-          <p>&copy; 2024 TechFlow. All rights reserved.</p>
+          <p>&copy; 2025 TechFlow. All rights reserved.</p>
         </div>
       </div>
     </footer>
