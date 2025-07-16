@@ -6,4 +6,6 @@ name = "tech-flow"
 compatibility_date = "2024-06-24"
 
 # This tells Wrangler where your final build folder is.
-pages_build_output_dir = "./dist"
+main = "dist/index.js"                 # Path to your Worker script
+type = "javascript"                    # Or "module" if using ESModules
+workers_dev = true                     # Deploy to workers.dev subdomain
