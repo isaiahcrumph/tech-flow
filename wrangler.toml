@@ -1,20 +1,12 @@
-# This is the modern, recommended configuration for deploying a static SPA
-# like React, Vue, or Angular to Cloudflare. It uses the Pages platform.
-
-# The name of your project. This will be part of the URL.
+# wrangler.toml   ← minimal static‑site Worker
 name = "tech-flow"
-
-# The date of the Workers runtime version to use for any associated Functions.
 compatibility_date = "2024-06-24"
 
-# This is the required field that was missing.
-# It tells Wrangler which folder contains your final built site.
-pages_build_output_dir = "./dist"
+[build]
+command = "bun run build"
 
-# REMINDER:
-# With this config, your deploy command is now simpler.
-# You no longer need to specify the directory or branch in the command.
-#
-# Just run:
-# npx wrangler pages deploy
+[assets]
+directory = "./dist"
+
+
 
